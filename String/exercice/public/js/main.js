@@ -33,8 +33,22 @@ console.log(getRandomInt(10));
 
 // Exo 11
 let minus = correctphrase.toLowerCase();
-var first = minus.charAt(4).toUpperCase()
-var second = minus.charAt(6).toUpperCase()
-console.log(first, second)
-let maxi = minus.substr(0, 4) + first + minus.substr(4,minus.length)
-console.log(maxi)
+var first = minus.charAt(4).toUpperCase();
+var second = minus.charAt(6).toUpperCase();
+let maxi = minus.substr(0, 4) + first + minus.substr(5,minus.length);
+maxi = maxi.substr(0,6) + second + maxi.substr(7, maxi.length);
+console.log(maxi);
+
+// Exo 12
+let firstoccurence = correctphrase.indexOf("o");
+let secondoccurence = correctphrase.indexOf("o", firstoccurence+1);
+let thirdoccurence = correctphrase.indexOf("o", secondoccurence +1);
+console.log(secondoccurence);
+console.log(thirdoccurence);
+
+// Exo 13
+let nom = "imane";
+var first = nom.charAt(0).toUpperCase();
+var last = nom.charAt(nom.length-1).toUpperCase();
+var newnom = first + nom.substr(1, (nom.length-2)) + last;
+console.log(newnom);
