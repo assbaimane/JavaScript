@@ -1,3 +1,4 @@
+// Exo1
 // var tartine = "J’aime les tartines et j’en mange";
 // console.log(tartine);
 
