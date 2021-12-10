@@ -43,12 +43,12 @@ console.log(1==-1);
 //         newdata = prompt("Entre 3 prénoms !");
 //         table.push(newdata);
 //     }
-//     if (table.length < 3){
+//     else if (table.length < 3){
 //         newdata = prompt("Entre 3 prénoms !");
 //         table.push(newdata);
 //     }
 //     console.log(table);
-//     if (table.length == 3){
+//     else if (table.length == 3){
 //         alert("Le tableau est plein !");
 //         alert(table);
 //     }
