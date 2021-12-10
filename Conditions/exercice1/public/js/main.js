@@ -1,8 +1,8 @@
 // Exo 1 Via un console.log() vérifie l'egalité entre 1 et "1"
-console.log(1==-1);
+// console.log(1==-1);
 
 // Exo 2 Via un console.log() vérifie l'egalité STRICTE entre 1 et "1"
- console.log(1 === "1");
+//  console.log(1 === "1");
 
 // Exo 3 Créer un programme qui demande le prénom d'une personne, si le prénom de la personne comporte moins de 5 caractères, affichée une alerte avec comme message " Ton nom est trop court "
 // let prenom = prompt("Quel est ton prénom stp?");
@@ -56,20 +56,46 @@ console.log(1==-1);
 // else{}
 
 // 7. Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
-let i = 0;
-let petitNombres = [];
-let grandNombres = [];
-do{
-    let nombre = +prompt("Donne moi un nombre");
-    i += 1;
-    if (nombre < 12){
-        petitNombres.push(nombre);
-    }
-    else{
-        grandNombres.push(nombre);
-    }
-}while (i<6);
-alert("Bac petit NB : " + petitNombres + "    |     Bac grand NB : " + grandNombres);
+// let i = 0;
+// let petitNombres = [];
+// let grandNombres = [];
+// do{
+//     let nombre = +prompt("Donne moi un nombre");
+//     i += 1;
+//     if (nombre < 12){
+//         petitNombres.push(nombre);
+//     }
+//     else{
+//         grandNombres.push(nombre);
+//     }
+// }while (i<6);
+// alert("Bac petit NB : " + petitNombres + "    |     Bac grand NB : " + grandNombres);
 
 // 8. Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
-
+let listefruit = ["pomme", "orange", "poire", "mangue"]
+let ok = confirm("Choisis un fruit dans la liste et laisse moi le deviner ! "+listefruit+" Clique sur ok quand c'est fait ! ");
+if (ok){
+    let vert = confirm("Est ce que ton fruit peut être vert?");
+    if (vert){
+        let rond = confirm("Est ce que ton fruit est plus ou moins de forme ronde?");
+        if (rond){
+            alert("Le fruit auquel tu penses est une pomme !")
+        }
+        else{
+            alert("Le fruit auquel tu penses est une poire !")
+        }
+    }
+    else{
+        let orange = true;
+        rond = confirm("Est ce que ton fruit est plus ou moins de forme ronde?");
+        if (rond){
+            alert("Le fruit auquel tu penses est une orange !")
+        }
+        else{
+            alert("Le fruit auquel tu penses est une mangue !")
+        }
+    }
+}
+else {
+    alert("Tu ne veux pas jouer aujourd'hui ? Au revoir !");
+}
