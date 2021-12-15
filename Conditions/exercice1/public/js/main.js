@@ -71,7 +71,7 @@
 // }while (i<6);
 // alert("Bac petit NB : " + petitNombres + "    |     Bac grand NB : " + grandNombres);
 
-// 8. Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
+// 1.8. Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
 let listefruit = ["pomme", "orange", "poire", "mangue"]
 let ok = confirm("Choisis un fruit dans la liste et laisse moi le deviner ! "+listefruit+" Clique sur ok quand c'est fait ! ");
 if (ok){
@@ -89,10 +89,10 @@ if (ok){
         let orange = true;
         rond = confirm("Est ce que ton fruit est plus ou moins de forme ronde?");
         if (rond){
-            alert("Le fruit auquel tu penses est une orange !")
+             alert("Le fruit auquel tu penses est une orange !")
         }
         else{
-            alert("Le fruit auquel tu penses est une mangue !")
+           alert("Le fruit auquel tu penses est une mangue !")
         }
     }
 }
