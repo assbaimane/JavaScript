@@ -58,22 +58,23 @@ console.log(Modulo(1,2));
 // EXO6
 // Créez une fonction qui prend un paramètre, et retourne le carré de ce nombre, et faites un console.log du résultat.(Racine carrée)
 
-const racine = (nbr) => {
-    let racine = Math.sqrt(nbr);
-    return(racine);
+const racinecarre = (racine) =>{
+    let racinecarree = Math.sqrt(racine);
+    return racinecarree;
 }
-console.log(racine(25));
+console.log(racinecarre(25))
 
 //________________________________________________________
 
 // EXO7
 // Créez une fonction qui prend deux paramètres, et retourne le premier nombre à l'exposant du deuxième, et faites un console.log du résultat.(Exposant)
 
-const Exposant = (base,exposant) => {
-    let Exposant = Math.pow(base,exposant);
-    return(Exposant);
+const exposant = (base, exposant) =>{
+    let result = Math.pow(base, exposant);
+    return result;
 }
-console.log(Exposant(2,3));
+
+console.log(exposant(2,3))
 
 //________________________________________________________
 

@@ -1,3 +1,8 @@
+
+// Exercises find on https://waytolearnx.com/2020/04/exercice-javascript-corrige-partie-1.html
+
+//________________________________________________________
+
 // Exercice 1:
 // Créez une fonction qui prend deux nombres comme arguments et retourne leur somme.
 // Exemple:
@@ -74,19 +79,57 @@ console.log(strReverse("Hello"));
 // getMax(5, 9, 1) ➞ 9
 // getMax(2, 3, 10) ➞ 10
 
+const getMax = (nba,nbb,nbc) =>{
+    let max = Math.max(nba,nbb,nbc);
+    return max;
+}
+console.log(getMax(4,56,9));
 
 //________________________________________________________
 
+// Exercice 7:
+// Créez une fonction qui prend un tableau et renvoie le premier élément. Notez que le premier élément d’un tableau commence toujours par l’index 0.
+
+// Exemple:
+// getFirst([1, 2, 3]) ➞ 1
+// getFirst([50, 60, 70]) ➞ 50
+
+const getFirst = (mylist) =>{
+    let first = mylist[0];
+    return first;
+}
+let list = ["a","b","c"];
+console.log(getFirst(list));
 
 
 //________________________________________________________
 
+// Exercice 8:
+// Écrivez un programme JavaScript pour récupérer l’URL d’un site Web
 
-
-//________________________________________________________
-
-
-//________________________________________________________
-
+console.log(document.URL);
 
 //________________________________________________________
+
+// Exercice 9:
+// Écrivez un programme JavaScript pour renvoyer le reste de deux nombres. Il existe un seul opérateur en JavaScript, capable de fournir le reste d’une division. Deux nombres sont transmis comme paramètres. Le premier paramètre divisé par le deuxième paramètre.
+
+// Exemple:
+// resteDiv(1, 3) ➞ 1
+// resteDiv(2, 4) ➞ 2
+// resteDiv(3, 3) ➞ 0
+
+const resteDiv = (diviseur,dividant) =>{
+    let reste = diviseur % dividant;
+    switch (diviseur % dividant){
+        case (0):
+            reste = "Il n'y a aucun reste dans cette opération !"
+            break;
+        default:
+            reste = `Le reste de ${diviseur} / ${dividant} est ${reste}`
+    }
+    return reste;
+}
+console.log(resteDiv(5, 2));
+
+
