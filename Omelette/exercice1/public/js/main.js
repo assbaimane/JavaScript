@@ -157,3 +157,19 @@ poele.cuir();
 
 // Afficher un message final, notre omelette est cuite :)
 // Cf ./class.js dans la méthode cuir().setTimeout()
+
+class Classe{
+    constructor(comte,conte,compte){
+        this.clasS = {
+            nom : "class",
+            etat : "classe"
+        }
+        this.comte = comte;
+        this.conte = conte;
+        this.compte = compte;
+    }
+}
+let classe = new Classe("compte","conte","comte");
+console.log(`Je ${    } sur toi pour répondre à cette question !`)
+
+Remplis la variable pour compléter la phrase correctement. 
