@@ -52,7 +52,8 @@ let recupPrenom = document.getElementsByTagName("div")[0].children[10].children[
 console.log(recupPrenom);
 
 // ### 10. En partant de Nicolas, affiche Primo
-
+let exo10 = exo9.firstElementChild.firstElementChild;
+console.log(exo10.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild.textContent);
 
 // ### 11. Trouve une methode de récupération qui permet de récupérer "un" élément via sa class ou son id sans utiliser getElementById ou getElementsByClassName et récupère "grandParagraphe"
 let recupClass = document.querySelector(".grandParagraphe");
