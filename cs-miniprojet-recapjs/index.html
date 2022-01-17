@@ -7,7 +7,116 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <title>MiniProjet-RecapJS</title>
 </head>
-<body>
+<body class="container">
+    <h1 class="bg-primary text-light mx-auto">Javascript DOM</h1>
+    <nav>
+        <div class="row">
+            <button class="btn nav text-primary col-3">Exercice 1</button>
+            <button class="btn nav text-primary col-3">Exercice 2</button>
+            <button class="btn nav text-primary col-3">Exercice 3</button>
+            <button class="btn nav text-primary col-3">Exercice 4</button>
+        </div>
+        <div class="row">
+            <button class="btn nav text-primary col-3">Exercice 5</button>
+            <button class="btn nav text-primary col-3">Exercice 6</button>
+        </div>
+    </nav>
+
+    <section id="Exo1">
+        <h2>Le titre</h2>
+        <p>Voici une liste de propriété et de méthode à retrouver dans la documentation qui pourraient vous aider :</p>
+        <ul>
+            <li>innerText</li>
+            <li>innerHTML</li>
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+            <li>style</li>
+            <li>classList</li>
+        </ul>
+        <h3>Consignes :</h3>
+        <p>1.Changer le contenu de h2 par "le titre modifié"</br>
+        2. Changer la couleur de h2 par la couleur que vous souhaitez</br>
+        3. Ajouter une classe background bootstrap au h2</p>
+    </section>
+
+    <section id="Exo2">
+        <p>Mettre un écouteur d'évenements sur les boutons de navigation et changer le pannel en conséquence.</p>
+    </section>
+
+    <section id="Exo3">
+        <h2>Welcome <span>inconnu</span></h2>
+        <p>Ecrivez dans l'input ci-dessous le nom de la personne que voulez acceuillir <br>
+        Lorsque vous cliquer sur le bouton "go", le nom que vous avez ajouté dans l'input sera alors mis dans le span du h2. L'input sera alors vidé de son contenu. Attention, il est interdit de toucher au HTML.</p>
+        <input type="text">
+        <button class="btn go">go</button>
+    </section>
+
+    <section id="Exo4">
+        <h2>Déplacer les élements</h2>
+        <div class="row mb-3">
+            <div class="col-5 bg-primary mx-auto">
+                <div class="col-1 bg-danger">boite rouge</div>
+            </div>
+            <div class="col-5 bg-primary mx-auto"></div>
+        </div>
+        <button class="btn bg-warning text-light">change place</button>
+        <button class="btn bg-success text-light">nombre de click</button>
+    </section>
+
+    <section id="Exo5">
+        <h2>Génerer des élements du DOM</h2>
+        <p>Cliquez sur le bouton ci-dessous pour générer des oeufs</p>
+        <button class="btn bg-success text-light">Ajouter un oeuf</button>
+    </section>
+
+    <section id="Exo6">
+        <h2>Création calculatrice</h2>
+        <h3>Niveau 1</h3>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <input type="number" class="col-3">
+                        <p class="col-1">+</p>
+                        <input type="number" class="col-3">
+                        <button class="btn col-1">=</button>
+                        <p id="addResult"></p>
+                    </div>
+                </div>
+            </div>
+        <h3>Niveau 2</h3>
+            <div class="col-4 bg-dark">
+                <div class="calculette">
+                    <div class="row">
+                        <p id="calculResult" class="text-light" style="height: 5vh;"></p>
+                        <input type="number" class="mt-2 mb-2 d-flex mx-auto">
+                    </div>
+                    <div class="row pt-2 pb-2 mx-auto border border-bottom border-secondary">
+                        <button class="btn mx-auto bg-light col-2">1</button>
+                        <button class="btn mx-auto bg-light col-2">2</button>
+                        <button class="btn mx-auto bg-light col-2">3</button>
+                        <button class="btn mx-auto bg-primary col-2">+</button>
+                    </div>
+                    <div class="row pt-2 pb-2 mx-auto border border-bottom border-secondary">
+                        <button class="btn mx-auto bg-light col-2">4</button>
+                        <button class="btn mx-auto bg-light col-2">5</button>
+                        <button class="btn mx-auto bg-light col-2">6</button>
+                        <button class="btn mx-auto bg-primary col-2">-</button>
+                    </div>
+                    <div class="row pt-2 pb-2 mx-auto border border-bottom border-secondary">
+                        <button class="btn mx-auto bg-light col-2">7</button>
+                        <button class="btn mx-auto bg-light col-2">8</button>
+                        <button class="btn mx-auto bg-light col-2">9</button>
+                        <button class="btn mx-auto bg-primary col-2">*</button>
+                    </div>
+                    <div class="row pt-2 pb-2 mx-auto border border-bottom border-secondary">
+                        <button class="btn mx-auto bg-danger col-2">C</button>
+                        <button class="btn mx-auto bg-light col-2">0</button>
+                        <button class="btn mx-auto bg-success col-2">=</button>
+                        <button class="btn mx-auto bg-primary col-2">/</button>
+                    </div>
+                </div>
+            </div>
+    </section>
     
 </body>
 <script src="public/js/main.js"></script>
