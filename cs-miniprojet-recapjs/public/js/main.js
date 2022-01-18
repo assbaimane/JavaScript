@@ -107,3 +107,56 @@ let equalButton = document.querySelector(".equal");
 equalButton.addEventListener("click",()=>{
     firstResult.innerText = Number(firstLevelInput1.value) + Number(firstLevelInput2.value);
 })
+
+//Niveau 2________________________________________________________________________________________
+let secondInput = document.querySelectorAll("#Exo6 input")[2];
+let secondResult = document.querySelector("#calculResult");
+let finalResult = document.querySelector("#calculResult span");
+let calculator = document.querySelector(".calculette");
+let equalCalculator = document.querySelector(".equ");
+let inputValues = ""
+function operationTrim(operator){
+    inputValues = secondInput.value.split(operator);
+    console.log(secondInput)
+    inputValues[1] = inputValues[1].substring(0,inputValues[1].length-1);
+    finalResult.textContent = Number(inputValues[0]) + Number(inputValues[1]);
+}
+calculator.addEventListener("click",(event)=>{
+    // If an operation nutton is pressed
+    secondInput.value = secondInput.value + event.target.textContent;
+    console.log(secondInput.value);
+
+    // If equal button is pressed
+    if (event.target.classList.contains("equ")){
+        console.log("etape1");
+        // Trim wich kinda of operation it is 
+        if(secondInput.value.includes("+")){
+            console.log("C'est une addition");
+            operationTrim("+");
+            finalResult.textContent = Number(inputValues[0]) + Number(inputValues[1]);
+        }else if(secondInput.value.includes("*")){
+            operationTrim("*");
+            finalResult.textContent = Number(inputValues[0]) * Number(inputValues[1]);
+        }
+        else if(secondInput.value.includes("-")){
+            operationTrim("-");
+            finalResult.textContent = Number(inputValues[0]) - Number(inputValues[1]);
+        }
+        else if(secondInput.value.includes("/")){
+            operationTrim("/");
+            finalResult.textContent = Number(inputValues[0]) / Number(inputValues[1]);
+        }
+
+
+        // Display result and clean input 
+        console.log(finalResult.textContent)
+        secondResult.textContent = secondInput.value + finalResult.textContent;
+        secondInput.value = "";
+
+    }
+    // If deletion button is pressed
+    else if(event.target.classList.contains("del")){
+        secondInput.value = "";
+        secondResult.textContent = "";
+    }else{}
+})
