@@ -98,3 +98,12 @@ addEgg.addEventListener("click",()=>{
 })
 
 // EXERCICE 6 ______________ JAVASCRIPT 
+
+//Niveau 1
+let firstLevelInput1 = document.querySelector("#Exo6 input");
+let firstLevelInput2 = document.querySelectorAll("#Exo6 input")[1];
+let firstResult =document.querySelector("#addResult");
+let equalButton = document.querySelector(".equal");
+equalButton.addEventListener("click",()=>{
+    firstResult.innerText = Number(firstLevelInput1.value) + Number(firstLevelInput2.value);
+})
