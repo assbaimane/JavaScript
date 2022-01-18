@@ -54,19 +54,19 @@
     <section id="Exo4">
         <h2>Déplacer les élements</h2>
         <div class="row mb-3">
-            <div class="col-5 bg-primary mx-auto">
-                <div class="col-1 bg-danger">boite rouge</div>
+            <div class="col-5 bg-primary mx-auto d-flex align-items-center" id="source">
+                <div class="col-1 mx-auto rouge bg-danger"></div>
             </div>
-            <div class="col-5 bg-primary mx-auto"></div>
+            <div class="col-5 bg-primary mx-auto d-flex align-items-center" id="destination"></div>
         </div>
-        <button class="btn bg-warning text-light">change place</button>
-        <button class="btn bg-success text-light">nombre de click</button>
+        <button class="btn bg-warning text-light" id="changePlace">change place</button>
+        <button class="btn bg-success text-light">nombre de click : <span></span></button>
     </section>
 
     <section id="Exo5">
         <h2>Génerer des élements du DOM</h2>
         <p>Cliquez sur le bouton ci-dessous pour générer des oeufs</p>
-        <button class="btn bg-success text-light">Ajouter un oeuf</button>
+        <button class="btn add bg-success text-light">Ajouter un oeuf</button>
     </section>
 
     <section id="Exo6">

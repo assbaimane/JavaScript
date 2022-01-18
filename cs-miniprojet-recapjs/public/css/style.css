@@ -11123,4 +11123,13 @@ button:focus {
   color: #fff !important;
 }
 
+#source, #destination {
+  height: 20vh;
+}
+
+.rouge {
+  width: 20%;
+  padding-top: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
