@@ -44,11 +44,14 @@ class Todo_Class{
     }
 
     removeAllTasks(){
+        let confirmSupression = confirm("Are you sure that you want to remove all tasks?");
         console.log("en train deffacer toutes les taches")
-        let children = Array.prototype.slice.call(this.ulElement.children);
-        children.forEach(element => {
-            this.ulElement.removeChild(element);
-        });
+        if (confirmSupression){
+            let children = Array.prototype.slice.call(this.ulElement.children);
+            children.forEach(element => {
+                this.ulElement.removeChild(element);
+            });
+        }
     }
     display(){
         // Create element to display
