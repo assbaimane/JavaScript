@@ -20,3 +20,12 @@ document.querySelector("body").addEventListener('keypress', function (e) {
       myTodoList.createNewTask();
     }
 });
+
+// Remove task by dblClick
+taskList.addEventListener("dblclick",()=>{myTodoList.removeOneTask(e)});
+
+//Remove AllTask
+clearButton.addEventListener("click",()=>{myTodoList.removeAllTasks()})
+
+// Change state in done when first task button is pressed
+// doneButton.addEventListener("click",()=>{myTodoList.done(event)});

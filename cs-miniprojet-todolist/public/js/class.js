@@ -17,13 +17,19 @@ class Todo_Class{
             taskInput.value = "";
         }
     }
-    removeOneTask(){
-
+    removeOneTask(e){
+        console.log("hey")
+        this.ulElement.removeChild(e.target);
+        this.display();
     }
     removeAllTasks(){
-
+        console.log("en train deffacer")
+        let children = Array.prototype.slice.call(this.ulElement.children);
+        children.forEach(element => {
+            this.ulElement.removeChild(element);
+        });
     }
-    done_undone(){
+    done(){
 
     }
     display(){
