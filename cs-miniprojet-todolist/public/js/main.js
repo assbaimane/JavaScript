@@ -9,14 +9,14 @@ let toDoCategory = document.querySelector("#toDoCategory");
 let allCategory = document.querySelector("#allCategory");
 
 let clearButton = document.querySelector(".clearButton");
-// let listeTache = document.querySelector(".listeTache");
-// let p = document.querySelector("p");
-// let doneButton = document.querySelector("button .done");
-// let saveButton = document.querySelector("button  .save");
-// let delButton = document.querySelector("button .del");
-
-
 let taskList = document.querySelector("#taskList");
-
 let myTodoList = new Todo_Class(taskList);
+
+
+// Add Task event management
 addTaskButton.addEventListener("click",()=>{myTodoList.createNewTask()});
+document.querySelector("body").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      myTodoList.createNewTask();
+    }
+});
