@@ -40,7 +40,7 @@ class Todo_Class{
     }
     done(target){
         console.log("tache classé comme faite ")
-        target.parentElement.parentElement.classList.add("checked")
+        target.parentElement.parentElement.classList.toggle("checked")
         console.log(target.parentElement)
     }
 
