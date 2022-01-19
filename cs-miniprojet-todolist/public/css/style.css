@@ -17244,34 +17244,28 @@ body {
   border-radius: 10px;
 }
 .page button {
-  border: 1px solid #73C6B6;
+  border: 1px solid #6d8e92;
   border-radius: 10px;
-  color: #73C6B6;
+  color: #6d8e92;
 }
 .page button .fa {
-  color: #73C6B6;
+  color: #6d8e92;
 }
 .page h1, .page .h1 {
   justify-self: center;
-  color: #73C6B6;
+  color: #ecc1c1;
 }
-.page .listeTache {
-  border-radius: 30px;
+.page ul li {
+  color: #6d8e92;
+  margin: 1% 5%;
+  padding-left: 1%;
+  list-style-type: none;
+  background-color: #eee;
+  border-radius: 3px;
 }
-.page .listeTache button {
-  border: none;
-}
-.page .listeTache button .fas {
-  color: #FFF;
-}
-.page .listeTache button:first-of-type {
-  background-color: #c8e6e0;
-}
-.page .listeTache button:nth-of-type(2) {
-  background-color: #c6dbcd;
-}
-.page .listeTache button:last-of-type {
-  background-color: #ecc1c1;
+.page ul li.checked {
+  background-color: #6d8e92;
+  color: #eee;
 }
 .page .clearButton {
   border: none;

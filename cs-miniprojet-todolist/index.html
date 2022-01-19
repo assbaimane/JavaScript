@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <title>To-Do list</title>
 </head>
-<body>
-    <div class="bg-light page">
+<body class="bg-light page">
+    <header>
         <div class="d-flex justify-content-center">
-            <input id="taskInput" class="mt-5 mb-3 border border-none ps-3" type="text" placeholder="Votre tâche?">
+            <input id="taskInput" class="mt-5 mb-3 me-3 border border-none ps-3" type="text" placeholder="Votre tâche?">
             <button id="addTaskButton" class="bg-light mt-5 mb-3"><i class="fa fa-plus"></i>Add</button>
         </div>
         <h1 class="text-center mb-4">TO-DO LIST</h1>
-        <div class="row justify-content-center">
-            <button id="finishCategory" class="col-2 m-1 bg-light">Terminé</button>
-            <button id="toDoCategory" class="col-2 m-1 bg-light">A faire</button>
-            <button id="allCategory" class="col-2 m-1 bg-light">Tout</button>
-        </div>
-        <div class="listeTache container">
-            <div class="row bg-white d-flex align-items-center">
-               <p class="col-9">Tache 1</p>
-               <button class="done col-1 p-1"><i class="fas fa-check-circle"></i></button>
-               <button class="save col-1 p-1"><i class="fas fa-save"></i></button>
-               <button class="del col-1 p-1"><i class="fas fa-trash"></i></button>
-            </div>
-        </div>
+    </header>
+
+    <!-- Category Button -->
+    <div class="row justify-content-center">
+        <button id="finishCategory" class="col-2 m-1 bg-light">Terminé</button>
+        <button id="toDoCategory" class="col-2 m-1 bg-light">A faire</button>
+        <button id="allCategory" class="col-2 m-1 bg-light">Tout</button>
+    </div>
+
+    <!-- List to fill -->
+    <ul id="taskList"></ul>
+
+    <!-- Button to clear everything -->
+    <div class="d-flex justify-content-center mt-3 mb-3">
         <button class="clearButton">Clear List</button>
     </div>
 </body>
-<script src="public/js/main.js"></script>
+<script type="module" src="public/js/main.js"></script>
 </html>
