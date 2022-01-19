@@ -23,20 +23,20 @@ class Todo_Class{
             this.done(target);
         }
         else if(target.classList.contains("save")){
-            this.renameTask();
+            this.renameTask(target);
         }
         else if(target.classList.contains("del")){
-            this.removeOneTask();
+            this.removeOneTask(target);
         }
     }
 
-    renameTask(){
+    renameTask(target){
+        let taskToRename = target.parentElement.parentElement
+        // taskList.removeChild
         console.log("renomme une tache")
     }
     removeOneTask(target){
-        console.log("supprime une tache")
-        this.ulElement.removeChild(target);
-        this.display();
+        this.ulElement.removeChild(target.parentElement.parentElement);
     }
     done(target){
         console.log("tache classé comme faite ")

@@ -12,15 +12,16 @@ let clearButton = document.querySelector(".clearButton");
 let taskList = document.querySelector("#taskList");
 let myTodoList = new Todo_Class(taskList);
 
-
-
-// Add Task event management
+// Add Task event (add button || enter key)
 addTaskButton.addEventListener("click",()=>{myTodoList.createNewTask()});
 document.querySelector("body").addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       myTodoList.createNewTask();
     }
 });
+
+// Task buttons management (done/rename/delete)
+document.querySelector("body").addEventListener("click",(event)=>{myTodoList.manageTaskButton(event.target)})
 
 // Remove task by dblClick
 taskList.addEventListener("dblclick",(event)=>{
@@ -30,10 +31,4 @@ taskList.addEventListener("dblclick",(event)=>{
 //Remove AllTask
 clearButton.addEventListener("click",()=>{myTodoList.removeAllTasks()})
 
-// Change state in done when first task button is pressed
-document.querySelector("body").addEventListener("click",(event)=>{myTodoList.manageTaskButton(event.target)})
-// doneButton.addEventListener("click",()=>{myTodoList.done(event)});
-
-// Save button when second task button is pressed
-
-// Delete button when third task button is pressed
+// Trim and display by category
