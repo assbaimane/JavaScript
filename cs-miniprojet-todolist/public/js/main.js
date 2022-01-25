@@ -25,8 +25,9 @@ document.querySelector("body").addEventListener('keypress', function (e) {
 document.querySelector("body").addEventListener("click", (event) => { myTodoList.manageTaskButton(event.target) })
 
 // Remove task by dblClick
-taskList.addEventListener("dblclick", (event) => {
-    myTodoList.removeOneTask(event.target)
+let taskChild = Array.prototype.slice.call(taskList.children);;
+taskChild.forEach(element => {
+    element.addEventListener("dblclick",myTodoList.removeOneTask(element))
 });
 
 //Remove AllTask
